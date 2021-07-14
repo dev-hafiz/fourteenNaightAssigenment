@@ -1,0 +1,94 @@
+/* Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root or body styles  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1050px;
+
+}
+
+/* Top section  */
+section.top-bg-color {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.top-bg-color{
+    width: 1440px;
+    height: 677px;
+    background: #2D25A0;
+}
+.top-para-sec {
+    width: 485px;
+    height: 230px;
+    margin-top: 207px;
+}
+
+.top-player-img {
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+}
+
+.top-player-img img {
+    width: 80%;
+}
+
+
+.top-player{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+h2.top-player-title {
+    font-size: 64px;
+    line-height: 77px;
+    color: #ffffff;
+    margin-bottom: 21px;
+}
+
+a.live-btn {
+    text-decoration: none;
+    color: white;
+    width: 168px;
+    height: 44px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    transition: .4s linear;
+}
+
+a.live-btn:hover {
+    background: #8a0535;
+}
+
+/* Responsive Meadia Quearies  */
+@media only screen and (max-width:688px){
+    .top-para-sec {
+        width: 278px;
+        height: 138px;
+     
+    }
+    h2.top-player-title {
+        font-size: 30px;
+        line-height: 50px;
+      
+    }
+    .top-player-img {
+        width: 329px;
+        height: 259.17px;
+        margin-top: 60px;
+    }
+    .container{
+        width: 100%;
+    }
+    .top-player{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
