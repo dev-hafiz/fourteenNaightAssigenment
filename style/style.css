@@ -103,6 +103,39 @@ p.player-para {
     line-height: 26px;
 }
 
+/*-----------------------------
+    Hilights Section Styles 
+----------------------------*/
+.highlights-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 68px;
+    margin-top: 100px;
+}
+.highlights-para-section {
+    margin-bottom: 30px;
+}
+.highlights-title {
+    font-size: 48px;
+    width: 469px;
+    height: 120px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    color: #0A0826;
+}
+.highlight-para {
+    width: 404px;
+    height: 113px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 38px;
+}
+.highlights-live-section img {
+    width: 567px;
+    height: 427px;
+}
+
 /*-----------------------
     Mega Box styles 
 ---------------------*/
@@ -214,10 +247,48 @@ h2.bottom-tittle {
     padding-top: 32px;
 }
 
+/*-----------------------
+    Footer Bottom Styles
+------------------------*/
+
+.footer-wrapper {
+    margin-top: 160px;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+}
+.img-footer img{
+    width: 483.87px;
+    height: 110px;
+}
+.social-icon i {
+    margin-right: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon a:hover i {
+    transform: scale(1.3);
+    transition: transform  .4s linear;
+}
+.fab {
+    color: #636161;
+    font-size: 25px;
+}
 
 
 
-/* Responsive Meadia Quearies  */
+
+
+/*--------------------------
+   Responsive Meadia Quearies 
+----------------------------*/
+
+/* MOBILE SCREEN MEADI QUERIES  */
 @media only screen and (max-width:688px){
     .top-para-sec {
         width: 278px;
@@ -237,7 +308,16 @@ h2.bottom-tittle {
     .container{
         width: 100%;
     }
-    .top-player, .mid-players, .mega-box-wrapper, .flexible-cards {
+    .top-player, .mid-players, .mega-box-wrapper, .flexible-cards, .highlights-wrapper{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+/* TABLET SCREEN MEADI QUERIES  */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .top-player, .mid-players, .mega-box-wrapper, .flexible-cards, .highlights-wrapper{
+        grid-template-columns: repeat(2,1fr);
     }
 }
